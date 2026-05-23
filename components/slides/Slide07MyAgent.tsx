@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -17,15 +17,15 @@ export default function Slide07MyAgent() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "920px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           הפרויקט שלי
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           הסוכן שלי — <span className="gradient-text">הארכיטקטורה</span>
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "30px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "30px" }}>
           כל שכבה בונה על הקודמת. ביחד — זה Leon OS, מערכת הפעלה אישית.
         </motion.p>
 
@@ -48,15 +48,15 @@ export default function Slide07MyAgent() {
               }}
             >
               <span style={{ fontSize: "20px", textAlign: "center" }}>{layer.icon}</span>
-              <p style={{ fontSize: "15px", fontWeight: 700, color: layer.color, fontFamily: "'Space Grotesk'" }}>{layer.label}</p>
-              <p style={{ fontSize: "14px", color: "var(--text-muted)" }}>{layer.desc}</p>
+              <p style={{ fontSize: "17px", fontWeight: 700, color: layer.color, fontFamily: "'Heebo'" }}>{layer.label}</p>
+              <p style={{ fontSize: "17px", color: "var(--text-muted)" }}>{layer.desc}</p>
             </motion.div>
           ))}
         </div>
 
         <motion.div {...fade(0.95)} style={{ marginTop: "18px", padding: "14px 20px", display: "flex", gap: "12px", background: "rgba(124,58,237,0.06)", borderLeft: "3px solid var(--primary)" }}>
           <span style={{ fontSize: "18px" }}>💡</span>
-          <p style={{ fontSize: "14px", color: "rgba(167,139,250,0.8)", lineHeight: 1.6 }}>
+          <p style={{ fontSize: "16px", color: "rgba(167,139,250,0.8)", lineHeight: 1.6 }}>
             כל הסודות נמצאים בקובץ <code style={{ background: "rgba(255,255,255,0.08)", padding: "1px 6px", borderRadius: "2px" }}>.env</code> אחד.
             כל הפרויקטים טוענים ממנו — לא מעתיקים סיסמאות.
           </p>
@@ -67,3 +67,5 @@ export default function Slide07MyAgent() {
     </div>
   );
 }
+
+

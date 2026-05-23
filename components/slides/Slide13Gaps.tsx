@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -35,15 +35,15 @@ export default function Slide13Gaps() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "920px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           הפערים הנוכחיים
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           מה עוד <span style={{ color: "var(--danger)" }}>חסר</span>
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "28px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "28px" }}>
           3 פערים שמבדילים top 40% מ-top 15%. כנות מלאה.
         </motion.p>
 
@@ -52,18 +52,18 @@ export default function Slide13Gaps() {
             <motion.div key={g.num} {...fade(0.3 + i * 0.14)} className="card"
               style={{ display: "grid", gridTemplateColumns: "52px 1fr 1fr 1fr", gap: "20px", alignItems: "start", borderLeft: `3px solid ${g.color}` }}
             >
-              <div style={{ fontFamily: "'Bebas Neue'", fontSize: "40px", color: g.color, lineHeight: 1 }}>{g.num}</div>
+              <div style={{ fontFamily: "'Heebo'", fontWeight: 900, fontSize: "36px", color: g.color, lineHeight: 1 }}>{g.num}</div>
               <div>
-                <p style={{ fontSize: "15px", fontWeight: 700, color: "var(--text)", marginBottom: "6px", fontFamily: "'Space Grotesk'" }}>{g.title}</p>
-                <p style={{ fontSize: "13px", color: "var(--text-muted)", lineHeight: 1.55 }}>{g.simple}</p>
+                <p style={{ fontSize: "17px", fontWeight: 700, color: "var(--text)", marginBottom: "6px", fontFamily: "'Heebo'" }}>{g.title}</p>
+                <p style={{ fontSize: "15px", color: "var(--text-muted)", lineHeight: 1.55 }}>{g.simple}</p>
               </div>
               <div>
-                <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--danger)", marginBottom: "5px", fontFamily: "'Space Grotesk'", letterSpacing: "0.1em", textTransform: "uppercase" }}>השפעה</p>
-                <p style={{ fontSize: "13px", color: "var(--text-muted)", lineHeight: 1.55 }}>{g.impact}</p>
+                <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--danger)", marginBottom: "5px", fontFamily: "'Heebo'", letterSpacing: "0.1em", textTransform: "uppercase" }}>השפעה</p>
+                <p style={{ fontSize: "15px", color: "var(--text-muted)", lineHeight: 1.55 }}>{g.impact}</p>
               </div>
               <div>
-                <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--success)", marginBottom: "5px", fontFamily: "'Space Grotesk'", letterSpacing: "0.1em", textTransform: "uppercase" }}>איך סוגרים</p>
-                <p style={{ fontSize: "13px", color: "var(--text)", lineHeight: 1.55 }}>{g.fix}</p>
+                <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--success)", marginBottom: "5px", fontFamily: "'Heebo'", letterSpacing: "0.1em", textTransform: "uppercase" }}>איך סוגרים</p>
+                <p style={{ fontSize: "15px", color: "var(--text)", lineHeight: 1.55 }}>{g.fix}</p>
               </div>
             </motion.div>
           ))}
@@ -74,3 +74,5 @@ export default function Slide13Gaps() {
     </div>
   );
 }
+
+

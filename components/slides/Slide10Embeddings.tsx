@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideNav from "../SlideNav";
@@ -30,16 +30,16 @@ export default function Slide10Embeddings() {
 
         {/* Left: explanation */}
         <div>
-          <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+          <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
             בסיס הRAG
           </motion.p>
 
-          <motion.h2 {...fade(0.13)} style={{ fontSize: "44px", fontWeight: 700, lineHeight: 1.1, marginBottom: "20px" }}>
+          <motion.h2 {...fade(0.13)} style={{ fontSize: "50px", fontWeight: 700, lineHeight: 1.1, marginBottom: "20px" }}>
             Embeddings — <br /><span className="gradient-text">מה זה בעצם?</span>
           </motion.h2>
 
           <motion.div {...fade(0.25)} className="highlight-box" style={{ marginBottom: "20px" }}>
-            <p style={{ fontSize: "15px", color: "var(--text)", lineHeight: 1.65 }}>
+            <p style={{ fontSize: "17px", color: "var(--text)", lineHeight: 1.65 }}>
               <strong style={{ color: "var(--primary-light)" }}>הסבר פשוט:</strong><br />
               כל מילה או משפט הופכים לרשימת מספרים (1536 מספרים אצלי).
               מילים עם מובן דומה = מספרים קרובים במרחב.
@@ -53,7 +53,7 @@ export default function Slide10Embeddings() {
               { a: "\"מניה\"", b: "\"ריצה\"",   result: "רחוקים", color: "var(--danger)" },
             ].map((row, i) => (
               <motion.div key={i} {...fade(0.38 + i * 0.1)}
-                style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px" }}
+                style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "16px" }}
               >
                 <code style={{ color: "#fbbf24", fontFamily: "'JetBrains Mono'" }}>{row.a}</code>
                 <span style={{ color: "var(--text-muted)" }}>+</span>
@@ -64,7 +64,7 @@ export default function Slide10Embeddings() {
             ))}
           </div>
 
-          <motion.p {...fade(0.68)} style={{ marginTop: "20px", fontSize: "13px", color: "var(--text-muted)", fontFamily: "'JetBrains Mono'" }}>
+          <motion.p {...fade(0.68)} style={{ marginTop: "20px", fontSize: "15px", color: "var(--text-muted)", fontFamily: "'JetBrains Mono'" }}>
             המודל שלי: gemini-embedding-2 · 1536 dimensions
           </motion.p>
         </div>
@@ -103,7 +103,7 @@ export default function Slide10Embeddings() {
               style={{ position: "absolute", left: `${w.x}%`, top: `${w.y}%`, transform: "translate(-50%,-50%)", textAlign: "center" }}
             >
               <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: w.color, margin: "0 auto 4px", boxShadow: `0 0 8px ${w.color}` }} />
-              <span style={{ fontSize: "11px", color: w.color, fontFamily: "'Space Grotesk'", fontWeight: 600, whiteSpace: "nowrap" }}>{w.label}</span>
+              <span style={{ fontSize: "11px", color: w.color, fontFamily: "'Heebo'", fontWeight: 600, whiteSpace: "nowrap" }}>{w.label}</span>
             </motion.div>
           ))}
         </motion.div>
@@ -113,3 +113,5 @@ export default function Slide10Embeddings() {
     </div>
   );
 }
+
+

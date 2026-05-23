@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -15,22 +15,22 @@ export default function Slide14Future() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "860px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           הצעדים הבאים
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           מה <span className="gradient-text">הלאה?</span>
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "36px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "36px" }}>
           מה שבנינו זה הבסיס. הצעדים הבאים יהפכו אותך מ-builder ל-engineer.
         </motion.p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
           {steps.map((step, i) => (
             <motion.div key={i} {...fade(0.28 + i * 0.13)}
-              style={{ display: "flex", gap: "0', alignItems: 'stretch" }}
+              style={{ display: "flex", gap: "0", alignItems: "stretch" }}
             >
               {/* Timeline line */}
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginRight: "20px", width: "24px", flexShrink: 0 }}>
@@ -41,9 +41,9 @@ export default function Slide14Future() {
               <div style={{ flex: 1, padding: "14px 0 20px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "6px" }}>
                   <span style={{ fontSize: "11px", fontFamily: "'JetBrains Mono'", color: step.color, letterSpacing: "0.08em" }}>{step.week}</span>
-                  <p style={{ fontSize: "17px", fontWeight: 700, color: "var(--text)", fontFamily: "'Space Grotesk'" }}>{step.title}</p>
+                  <p style={{ fontSize: "17px", fontWeight: 700, color: "var(--text)", fontFamily: "'Heebo'" }}>{step.title}</p>
                 </div>
-                <p style={{ fontSize: "14px", color: "var(--text-muted)", lineHeight: 1.55 }}>{step.desc}</p>
+                <p style={{ fontSize: "17px", color: "var(--text-muted)", lineHeight: 1.55 }}>{step.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -62,3 +62,5 @@ export default function Slide14Future() {
     </div>
   );
 }
+
+

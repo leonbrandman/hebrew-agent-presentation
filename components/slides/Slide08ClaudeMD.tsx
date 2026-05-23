@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -38,15 +38,15 @@ export default function Slide08ClaudeMD() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "920px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           המוח של הסוכן
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           <code style={{ fontFamily: "'JetBrains Mono'", fontSize: "42px", color: "var(--primary-light)" }}>CLAUDE.md</code> — ה-DNA
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "30px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "30px" }}>
           קובץ טקסט אחד שמגדיר מי הסוכן, איך הוא חושב, ומה הוא עושה עם כל סוג בקשה.
           זה מה שהופך Claude הכללי לסוכן אישי שלי.
         </motion.p>
@@ -57,14 +57,14 @@ export default function Slide08ClaudeMD() {
               style={{ display: "grid", gridTemplateColumns: "36px 140px 1fr 1fr", gap: "16px", alignItems: "center", padding: "16px 20px", background: p.bg, border: `1px solid ${p.border}`, borderRadius: "4px" }}
             >
               <span style={{ fontSize: "22px", textAlign: "center" }}>{p.icon}</span>
-              <p style={{ fontSize: "14px", fontWeight: 700, color: p.color, fontFamily: "'Space Grotesk'", letterSpacing: "0.04em" }}>{p.name}</p>
+              <p style={{ fontSize: "16px", fontWeight: 700, color: p.color, fontFamily: "'Heebo'", letterSpacing: "0.04em" }}>{p.name}</p>
               <div>
-                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'Space Grotesk'" }}>טריגר</p>
-                <p style={{ fontSize: "13px", color: "var(--text)" }}>{p.trigger}</p>
+                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'Heebo'" }}>טריגר</p>
+                <p style={{ fontSize: "15px", color: "var(--text)" }}>{p.trigger}</p>
               </div>
               <div>
-                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'Space Grotesk'" }}>מה קורה</p>
-                <p style={{ fontSize: "13px", color: "var(--text)" }}>{p.action}</p>
+                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", textTransform: "uppercase", letterSpacing: "0.1em", fontFamily: "'Heebo'" }}>מה קורה</p>
+                <p style={{ fontSize: "15px", color: "var(--text)" }}>{p.action}</p>
               </div>
             </motion.div>
           ))}
@@ -77,8 +77,8 @@ export default function Slide08ClaudeMD() {
             { label: "Journal Flow", desc: "\"יומן\" → 4 שאלות → Obsidian" },
           ].map((item, i) => (
             <motion.div key={i} {...fade(0.75 + i * 0.08)} style={{ flex: 1, padding: "12px 16px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "4px" }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--primary-light)", marginBottom: "5px", fontFamily: "'Space Grotesk'", letterSpacing: "0.1em" }}>{item.label}</p>
-              <p style={{ fontSize: "13px", color: "var(--text-muted)" }}>{item.desc}</p>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: "var(--primary-light)", marginBottom: "5px", fontFamily: "'Heebo'", letterSpacing: "0.1em" }}>{item.label}</p>
+              <p style={{ fontSize: "15px", color: "var(--text-muted)" }}>{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -88,3 +88,5 @@ export default function Slide08ClaudeMD() {
     </div>
   );
 }
+
+

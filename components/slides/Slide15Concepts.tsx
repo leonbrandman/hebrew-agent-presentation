@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -19,11 +19,11 @@ export default function Slide15Concepts() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "960px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           מילון מונחים
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "28px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "28px" }}>
           המושגים — <span className="gradient-text">בעברית פשוטה</span>
         </motion.h2>
 
@@ -33,10 +33,10 @@ export default function Slide15Concepts() {
               style={{ display: "flex", gap: "14px", padding: "14px 18px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "4px", alignItems: "flex-start" }}
             >
               <div style={{ minWidth: "100px" }}>
-                <p style={{ fontSize: "13px", fontFamily: "'JetBrains Mono'", color: "var(--primary-light)", marginBottom: "2px" }}>{c.term}</p>
+                <p style={{ fontSize: "15px", fontFamily: "'JetBrains Mono'", color: "var(--primary-light)", marginBottom: "2px" }}>{c.term}</p>
                 <p style={{ fontSize: "12px", color: "var(--text-muted)", fontWeight: 600 }}>{c.he}</p>
               </div>
-              <p style={{ fontSize: "13px", color: "var(--text-muted)", lineHeight: 1.55 }}>{c.def}</p>
+              <p style={{ fontSize: "15px", color: "var(--text-muted)", lineHeight: 1.55 }}>{c.def}</p>
             </motion.div>
           ))}
         </div>
@@ -46,3 +46,5 @@ export default function Slide15Concepts() {
     </div>
   );
 }
+
+

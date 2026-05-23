@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideNav from "../SlideNav";
@@ -30,21 +30,21 @@ export default function Slide03ReAct() {
       <div className="relative z-10" style={{ maxWidth: "860px", width: "100%" }}>
         <motion.p
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.05 }}
-          style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}
+          style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}
         >
           איך הסוכן חושב
         </motion.p>
 
         <motion.h2
           initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.12 }}
-          style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}
+          style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}
         >
           לולאת <span className="gradient-text">ReAct</span>
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
-          style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "32px" }}
+          style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "32px" }}
         >
           <strong style={{ color: "rgba(251,191,36,0.8)" }}>Re</strong>ason + <strong style={{ color: "rgba(147,197,253,0.8)" }}>Act</strong> — הסוכן חושב ופועל בסבבים, עד שמגיע לתשובה
         </motion.p>
@@ -81,7 +81,7 @@ export default function Slide03ReAct() {
 
         <motion.p
           initial={{ opacity: 0 }} animate={{ opacity: active >= steps.length - 1 ? 1 : 0 }} transition={{ duration: 0.6 }}
-          style={{ marginTop: "20px", fontSize: "14px", color: "var(--text-muted)", fontFamily: "'JetBrains Mono'" }}
+          style={{ marginTop: "20px", fontSize: "17px", color: "var(--text-muted)", fontFamily: "'JetBrains Mono'" }}
         >
           ← הלולאה הזאת יכולה לחזור עשרות פעמים בשיחה אחת
         </motion.p>
@@ -91,3 +91,5 @@ export default function Slide03ReAct() {
     </div>
   );
 }
+
+

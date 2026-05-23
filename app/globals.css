@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -22,15 +22,16 @@
 html, body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  direction: rtl;
   overflow: hidden;
   height: 100%;
   width: 100%;
 }
 
-h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
-code, pre { font-family: 'JetBrains Mono', monospace; }
-.display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+h1, h2, h3, h4 { font-family: 'Heebo', sans-serif; }
+code, pre { font-family: 'JetBrains Mono', monospace; direction: ltr; unicode-bidi: embed; }
+.display { font-family: 'Heebo', sans-serif; font-weight: 900; letter-spacing: -0.01em; }
 
 .slide {
   width: 100vw;
@@ -77,9 +78,9 @@ code, pre { font-family: 'JetBrains Mono', monospace; }
   z-index: 10;
 }
 
-.slide-number { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); letter-spacing: 0.05em; opacity: 0.6; }
-.slide-label  { font-family: 'Space Grotesk', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; color: var(--text-muted); text-transform: uppercase; opacity: 0.5; }
-.slide-brand  { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); opacity: 0.45; }
+.slide-number { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); letter-spacing: 0.05em; opacity: 0.6; direction: ltr; }
+.slide-label  { font-family: 'Heebo', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; opacity: 0.5; }
+.slide-brand  { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); opacity: 0.45; direction: ltr; }
 
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 24px; }
 .card-raw { border-left: 2px solid var(--border); padding: 16px 0 16px 24px; }
@@ -88,17 +89,17 @@ code, pre { font-family: 'JetBrains Mono', monospace; }
 .card-green  { border-left: 3px solid var(--success); }
 .card-red    { border-left: 3px solid var(--danger); }
 
-.badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 2px; font-size: 11px; font-weight: 700; font-family: 'Space Grotesk', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 2px; font-size: 11px; font-weight: 700; font-family: 'Heebo', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
 .badge-think   { background: rgba(217,119,6,0.12);  color: #fbbf24; }
 .badge-act     { background: rgba(59,130,246,0.12);  color: #93c5fd; }
 .badge-observe { background: rgba(63,185,80,0.12);   color: #86efac; }
 .badge-answer  { background: rgba(124,58,237,0.12);  color: #c4b5fd; }
 
-.section-label { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-muted); padding-bottom: 10px; border-bottom: 1px solid var(--border); display: inline-block; margin-bottom: 22px; width: 100%; }
+.section-label { font-family: 'Heebo', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding-bottom: 10px; border-bottom: 1px solid var(--border); display: inline-block; margin-bottom: 22px; width: 100%; }
 
 .gradient-text { background: linear-gradient(135deg, var(--primary-light) 20%, var(--cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-.flow-pill { background: var(--surface-2); border: 1px solid var(--border); border-radius: 3px; padding: 9px 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; white-space: nowrap; }
+.flow-pill { background: var(--surface-2); border: 1px solid var(--border); border-radius: 3px; padding: 9px 16px; font-family: 'Heebo', sans-serif; font-weight: 600; font-size: 16px; white-space: nowrap; }
 
 .highlight-box { background: rgba(124,58,237,0.06); border-left: 3px solid var(--primary); padding: 16px 20px; }
 

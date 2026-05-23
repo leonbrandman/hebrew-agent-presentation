@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideNav from "../SlideNav";
@@ -60,16 +60,16 @@ export default function Slide01Hook() {
               <span style={{
                 background: activeChip === i ? "rgba(124,58,237,0.18)" : "rgba(255,255,255,0.05)",
                 border: `1px solid ${activeChip === i ? "rgba(124,58,237,0.65)" : "rgba(255,255,255,0.1)"}`,
-                borderRadius: "2px", padding: "6px 16px", fontSize: "14px",
+                borderRadius: "2px", padding: "6px 16px", fontSize: "16px",
                 color: activeChip === i ? "rgba(167,139,250,1)" : "rgba(238,242,247,0.65)",
-                fontFamily: "'Space Grotesk'", fontWeight: activeChip === i ? 700 : 500,
+                fontFamily: "'Heebo'", fontWeight: activeChip === i ? 700 : 500,
                 transition: "all 0.35s ease",
                 boxShadow: activeChip === i ? "0 0 18px rgba(124,58,237,0.3)" : "none",
               }}>
                 {chip}
               </span>
               {i < chips.length - 1 && (
-                <span style={{ color: activeChip === i ? "rgba(124,58,237,0.9)" : "rgba(124,58,237,0.3)", fontSize: "14px", transition: "color 0.35s ease" }}>→</span>
+                <span style={{ color: activeChip === i ? "rgba(124,58,237,0.9)" : "rgba(124,58,237,0.3)", fontSize: "16px", transition: "color 0.35s ease" }}>→</span>
               )}
             </span>
           ))}
@@ -80,3 +80,5 @@ export default function Slide01Hook() {
     </div>
   );
 }
+
+

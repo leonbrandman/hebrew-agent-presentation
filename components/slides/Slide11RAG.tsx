@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SlideNav from "../SlideNav";
@@ -30,18 +30,18 @@ export default function Slide11RAG() {
       <div className="relative z-10" style={{ maxWidth: "880px", width: "100%" }}>
         <motion.p
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.05 }}
-          style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}
+          style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}
         >
           איך הסוכן מוצא ידע
         </motion.p>
 
         <motion.h2 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.13 }}
-          style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+          style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           <span className="gradient-text">RAG</span> — חיפוש + יצירה
         </motion.h2>
 
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
-          style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "36px" }}>
+          style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "36px" }}>
           <strong style={{ color: "rgba(167,139,250,0.8)" }}>R</strong>etrieval <strong style={{ color: "rgba(147,197,253,0.8)" }}>A</strong>ugmented <strong style={{ color: "rgba(134,239,172,0.8)" }}>G</strong>eneration —
           Claude לא יודע הכל. RAG נותן לו לדעת.
         </motion.p>
@@ -68,7 +68,7 @@ export default function Slide11RAG() {
                 }}
               >
                 <div style={{ fontSize: "24px", marginBottom: "8px" }}>{step.icon}</div>
-                <p style={{ fontSize: "13px", fontWeight: 700, color: active >= i ? step.color : "var(--text-muted)", fontFamily: "'Space Grotesk'", marginBottom: "6px" }}>{step.label}</p>
+                <p style={{ fontSize: "15px", fontWeight: 700, color: active >= i ? step.color : "var(--text-muted)", fontFamily: "'Heebo'", marginBottom: "6px" }}>{step.label}</p>
                 <p style={{ fontSize: "11px", color: "var(--text-muted)", lineHeight: 1.5 }}>{step.desc}</p>
               </motion.div>
               {i < steps.length - 1 && (
@@ -81,7 +81,7 @@ export default function Slide11RAG() {
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: active >= steps.length - 1 ? 1 : 0 }} transition={{ duration: 0.6 }}
           style={{ padding: "16px 20px", background: "rgba(124,58,237,0.06)", borderLeft: "3px solid var(--primary)" }}>
-          <p style={{ fontSize: "15px", color: "rgba(167,139,250,0.9)" }}>
+          <p style={{ fontSize: "17px", color: "rgba(167,139,250,0.9)" }}>
             בלי RAG: Claude יענה מהידע הכללי שלו — בינוני.<br />
             <strong>עם RAG:</strong> Claude יענה עם הידע הספציפי של מיכה סטוקס שלמדת — מדויק.
           </p>
@@ -92,3 +92,5 @@ export default function Slide11RAG() {
     </div>
   );
 }
+
+

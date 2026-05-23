@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -41,13 +41,13 @@ export default function Slide04Memory() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "960px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>זיכרון הסוכן</motion.p>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>זיכרון הסוכן</motion.p>
 
-        <motion.h2 {...fade(0.15)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.15)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           איך הסוכן <span className="gradient-text">זוכר?</span>
         </motion.h2>
 
-        <motion.p {...fade(0.22)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "32px" }}>
+        <motion.p {...fade(0.22)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "32px" }}>
           לChatGPT אין זיכרון — כל שיחה מתחילה מאפס. לסוכן שלי יש 3 סוגי זיכרון, כמו לבן אדם.
         </motion.p>
 
@@ -62,19 +62,19 @@ export default function Slide04Memory() {
                 <p style={{ fontSize: "11px", fontFamily: "'JetBrains Mono'", color: "var(--text-muted)", letterSpacing: "0.05em" }}>{m.eng}</p>
               </div>
               <div>
-                <p style={{ fontSize: "13px", color: "var(--text-muted)", marginBottom: "6px" }}>{m.desc}</p>
+                <p style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "6px" }}>{m.desc}</p>
                 <p style={{ fontSize: "12px", fontFamily: "'JetBrains Mono'", color: "rgba(238,242,247,0.5)", fontStyle: "italic" }}>&quot;{m.example}&quot;</p>
               </div>
               <div style={{ background: "var(--surface-2)", borderRadius: "3px", padding: "10px 14px" }}>
-                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", fontFamily: "'Space Grotesk'", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>אנלוגיה</p>
-                <p style={{ fontSize: "13px", color: "var(--text)" }}>{m.analogy}</p>
+                <p style={{ fontSize: "11px", color: "var(--text-muted)", marginBottom: "4px", fontFamily: "'Heebo'", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" }}>אנלוגיה</p>
+                <p style={{ fontSize: "15px", color: "var(--text)" }}>{m.analogy}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
         <motion.div {...fade(0.7)} style={{ marginTop: "18px", padding: "12px 18px", background: "rgba(124,58,237,0.06)", borderLeft: "3px solid var(--primary)", borderRadius: "0" }}>
-          <p style={{ fontSize: "14px", color: "rgba(167,139,250,0.8)" }}>
+          <p style={{ fontSize: "16px", color: "rgba(167,139,250,0.8)" }}>
             הזיכרון שלי מאוחסן בקבצים — כל קובץ הוא זיכרון עם תאריך ורמת decay. כשזיכרון מתיישן, הוא מקבל דגל.
           </p>
         </motion.div>
@@ -84,3 +84,5 @@ export default function Slide04Memory() {
     </div>
   );
 }
+
+

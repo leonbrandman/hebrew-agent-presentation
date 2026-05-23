@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -15,15 +15,15 @@ export default function Slide12Percentile() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "860px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           הערכה כנה
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           איפה אני <span className="gradient-text">עומד?</span>
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "34px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "34px" }}>
           אחוז המיקום שלי מתוך כל קבוצה (עד כמה גבוה אני ביחס לשאר)
         </motion.p>
 
@@ -31,8 +31,8 @@ export default function Slide12Percentile() {
           {bars.map((bar, i) => (
             <motion.div key={i} {...fade(0.28 + i * 0.13)}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "8px" }}>
-                <p style={{ fontSize: "15px", fontWeight: 600, color: "var(--text)", fontFamily: "'Space Grotesk'" }}>{bar.label}</p>
-                <p style={{ fontSize: "22px", fontWeight: 700, color: bar.color, fontFamily: "'Bebas Neue'", letterSpacing: "0.02em" }}>TOP {100 - bar.pct}%</p>
+                <p style={{ fontSize: "17px", fontWeight: 600, color: "var(--text)", fontFamily: "'Heebo'" }}>{bar.label}</p>
+                <p style={{ fontSize: "22px", fontWeight: 900, color: bar.color, fontFamily: "'Heebo'", letterSpacing: "0em" }}>TOP {100 - bar.pct}%</p>
               </div>
               <div style={{ height: "8px", background: "var(--surface)", borderRadius: "2px", overflow: "hidden", marginBottom: "6px" }}>
                 <motion.div
@@ -48,7 +48,7 @@ export default function Slide12Percentile() {
         </div>
 
         <motion.div {...fade(0.82)} style={{ marginTop: "28px", padding: "16px 20px", background: "rgba(124,58,237,0.06)", borderLeft: "3px solid var(--primary)" }}>
-          <p style={{ fontSize: "15px", color: "rgba(167,139,250,0.9)", lineHeight: 1.6 }}>
+          <p style={{ fontSize: "17px", color: "rgba(167,139,250,0.9)", lineHeight: 1.6 }}>
             בניתי דברים שרוב המפתחים לא בנו. החסר: <strong>הבנה עמוקה של הסיבה</strong> — לא רק שזה עובד, אלא למה.
             הפער הזה הוא בדיוק מה שהקורס אמור לסגור.
           </p>
@@ -59,3 +59,5 @@ export default function Slide12Percentile() {
     </div>
   );
 }
+
+

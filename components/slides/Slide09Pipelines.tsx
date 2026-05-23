@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -35,15 +35,15 @@ export default function Slide09Pipelines() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "960px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>
           צבירת ידע אוטומטית
         </motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           3 Pipelines שבניתי
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "28px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "28px" }}>
           כל pipeline אוסף ידע ממקור, מעבד אותו עם AI, ושומר בצורה שאפשר לחפש.
           אני לא צריך לקרוא כלום — הסוכן יודע.
         </motion.p>
@@ -53,7 +53,7 @@ export default function Slide09Pipelines() {
             <motion.div key={p.name} {...fade(0.28 + i * 0.13)} className="card" style={{ display: "grid", gridTemplateColumns: "36px 1fr auto", gap: "16px", alignItems: "start" }}>
               <span style={{ fontSize: "24px", marginTop: "2px" }}>{p.icon}</span>
               <div>
-                <p style={{ fontSize: "16px", fontWeight: 700, color: p.color, marginBottom: "10px", fontFamily: "'Space Grotesk'" }}>{p.name}</p>
+                <p style={{ fontSize: "16px", fontWeight: 700, color: p.color, marginBottom: "10px", fontFamily: "'Heebo'" }}>{p.name}</p>
                 <div style={{ display: "flex", gap: "8px", alignItems: "center", flexWrap: "wrap" }}>
                   {p.steps.map((step, j) => (
                     <span key={j} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
@@ -68,7 +68,7 @@ export default function Slide09Pipelines() {
                   display: "inline-block", padding: "3px 10px", borderRadius: "2px", marginBottom: "8px",
                   background: p.status === "פעיל" ? "rgba(63,185,80,0.1)" : "rgba(217,119,6,0.1)",
                   color: p.status === "פעיל" ? "var(--success)" : "var(--warning)",
-                  fontSize: "11px", fontWeight: 700, fontFamily: "'Space Grotesk'", letterSpacing: "0.08em",
+                  fontSize: "11px", fontWeight: 700, fontFamily: "'Heebo'", letterSpacing: "0.08em",
                 }}>
                   {p.status}
                 </span>
@@ -83,3 +83,5 @@ export default function Slide09Pipelines() {
     </div>
   );
 }
+
+

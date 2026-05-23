@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import SlideNav from "../SlideNav";
 
@@ -19,13 +19,13 @@ export default function Slide05Tools() {
   return (
     <div className="slide" style={{ justifyContent: "center" }}>
       <div className="relative z-10" style={{ maxWidth: "960px", width: "100%" }}>
-        <motion.p {...fade(0.05)} style={{ fontFamily: "'Space Grotesk'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>כלים</motion.p>
+        <motion.p {...fade(0.05)} style={{ fontFamily: "'Heebo'", fontSize: "12px", fontWeight: 700, letterSpacing: "0.22em", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "16px" }}>כלים</motion.p>
 
-        <motion.h2 {...fade(0.13)} style={{ fontSize: "48px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
+        <motion.h2 {...fade(0.13)} style={{ fontSize: "54px", fontWeight: 700, lineHeight: 1.1, marginBottom: "10px" }}>
           סוכן בלי כלים = <span style={{ color: "var(--danger)" }}>מוח בלי ידיים</span>
         </motion.h2>
 
-        <motion.p {...fade(0.2)} style={{ fontSize: "15px", color: "var(--text-muted)", marginBottom: "30px" }}>
+        <motion.p {...fade(0.2)} style={{ fontSize: "17px", color: "var(--text-muted)", marginBottom: "30px" }}>
           כלים הם מה שנותנים לסוכן יכולת לפעול בעולם האמיתי, מחוץ לשיחה. אלה הכלים של הסוכן שלי:
         </motion.p>
 
@@ -33,7 +33,7 @@ export default function Slide05Tools() {
           {tools.map((t, i) => (
             <motion.div key={i} {...fade(0.28 + i * 0.06)} className="card" style={{ textAlign: "center", padding: "18px 16px" }}>
               <div style={{ fontSize: "28px", marginBottom: "10px" }}>{t.icon}</div>
-              <p style={{ fontSize: "13px", fontWeight: 700, color: t.color, marginBottom: "6px", fontFamily: "'Space Grotesk'" }}>{t.name}</p>
+              <p style={{ fontSize: "15px", fontWeight: 700, color: t.color, marginBottom: "6px", fontFamily: "'Heebo'" }}>{t.name}</p>
               <p style={{ fontSize: "12px", color: "var(--text-muted)", lineHeight: 1.5 }}>{t.desc}</p>
             </motion.div>
           ))}
@@ -41,7 +41,7 @@ export default function Slide05Tools() {
 
         <motion.div {...fade(0.75)} style={{ marginTop: "18px", display: "flex", alignItems: "center", gap: "12px", padding: "12px 18px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "4px" }}>
           <span style={{ fontSize: "20px" }}>💡</span>
-          <p style={{ fontSize: "14px", color: "var(--text-muted)" }}>
+          <p style={{ fontSize: "17px", color: "var(--text-muted)" }}>
             בכל פעם שהסוכן רוצה להשתמש בכלי — הוא מבקש רשות. תוכל לאשר או לסרב לכל פעולה.
           </p>
         </motion.div>
@@ -51,3 +51,5 @@ export default function Slide05Tools() {
     </div>
   );
 }
+
+
